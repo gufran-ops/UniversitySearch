@@ -89,31 +89,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
-
                 onSearchRefresh(newText)
-//                tempItemList.clear()
-//                val searchText = newText!!.toLowerCase(Locale.getDefault())
-//                if(searchText.isNotEmpty()){
-//
-//                    itemList.forEach {
-//                        if(it.name.toLowerCase(Locale.getDefault()).contains(searchText)){
-//                            tempItemList.add(it)
-//                        }
-//                    }
-//
-//
-//                    adapter.setData(tempItemList)
-//                    adapter.setOnItemClickListner(object : ItemAdapter.OnItemClickListner {
-//                        override fun onItemClick(position: Int) {
-//                            val intent = Intent(this@MainActivity, WebActivity::class.java)
-//                            intent.putExtra("URL", tempItemList[position].url.getString(0))
-//                            intent.putExtra("NAME", tempItemList[position].name)
-//                            startActivity(intent)
-//                        }
-//
-//                    })
-//                    newRecyclerView.adapter = adapter
-//                }
                 return false
             }
 
@@ -218,20 +194,8 @@ class MainActivity : AppCompatActivity() {
 
         }
         universityViewModel.itemList.addAll(itemList)
-//        tempItemList.addAll(itemList)
         val searchText = searchView!!.query.toString()
         onSearchRefresh(searchText)
-//        adapter.setData(itemList)
-//        adapter.setOnItemClickListner(object : ItemAdapter.OnItemClickListner {
-//            override fun onItemClick(position: Int) {
-//                val intent = Intent(this@MainActivity, WebActivity::class.java)
-//                intent.putExtra("URL", itemList[position].url.getString(0))
-//                intent.putExtra("NAME", itemList[position].name)
-//                startActivity(intent)
-//            }
-//
-//        })
-//        newRecyclerView.adapter = adapter
         progressBar.visibility = View.GONE
     }
 
