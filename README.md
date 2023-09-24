@@ -43,8 +43,6 @@ An Android application built with Kotlin that fetches university data from the [
 
 ## Prerequisites
 
-Before you begin, ensure you have met the following requirements:
-
 - Android Studio with the latest Kotlin plugin installed.
 - An active internet connection to fetch university data.
 - Android device or emulator with API level 24 or higher.
@@ -57,7 +55,7 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/gufran-ops/UniversitySearch.git
 2. Open the project in Android Studio.
 
-3. Build and run the application on your Android device or emulator.
+3. Build and run the application on the Android device or emulator.
 
 ## Usage
 
@@ -75,7 +73,7 @@ Upon launching the app, the following features are available:
 
 ### 4. Opening University Websites
 
-- To open a university's website in-app, simply tap on the university of your choice in the list.
+- To open a university's website in-app, simply tap on the button of that University in the list.
 
 ### 5. Searching for Universities
 
@@ -101,6 +99,6 @@ If you have any questions please feel free to reach out to me:
 
 **Your Name**
 - Email: gufran022december@gmail.com
-- GitHub: [yourusername](https://github.com/gufran-ops)
+- GitHub: [gufran-ops](https://github.com/gufran-ops)
 
 
